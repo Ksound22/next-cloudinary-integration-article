@@ -8,7 +8,10 @@ const CloudinaryUploader = () => {
   return (
     <div className="flex items-center justify-center ">
       <CldUploadButton
-        options={{ multiple: true }} // demo how to add sources with sources: ['local', 'url', 'unsplash', 'camera'],
+        options={{
+          multiple: true,
+          sources: ['local', 'url', 'unsplash', 'camera'],
+        }}
         uploadPreset={cloudPresetName}
         className="bg-green-400 py-2 px-3 rounded border mt-4 text-white  hover:bg-green-500 transition ease-in-out delay-200"
       >
@@ -19,3 +22,4 @@ const CloudinaryUploader = () => {
 };
 
 export default CloudinaryUploader;
+// demo how to add sources with sources: ['local', 'url', 'unsplash', 'camera'],

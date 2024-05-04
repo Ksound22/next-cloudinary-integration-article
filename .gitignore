@@ -5,8 +5,10 @@
 /.pnp
 .pnp.js
 .yarn/install-state.gz
+Example.jsx
 
 /config
+/ss
 
 # testing
 /coverage
