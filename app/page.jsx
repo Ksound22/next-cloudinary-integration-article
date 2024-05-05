@@ -1,5 +1,4 @@
 import CloudinaryUploader from '@/components/CloudinaryUploader';
-import Example from '@/components/Example';
 
 import { v2 as cloudinary } from 'cloudinary';
 import Image from 'next/image';
@@ -24,11 +23,11 @@ async function Home() {
 
       <CloudinaryUploader />
 
-      {/* <h2 className="text-3xl text-center mt-10 mb-2">
+      <h2 className="text-3xl text-center mt-10 mb-2">
         {images.total_count === 1 ? 'Uploaded Image' : 'Uploaded Images'}
-      </h2> */}
+      </h2>
 
-      {/* <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         {images.total_count > 0 &&
           images.resources.map((image) => (
             <div
@@ -45,7 +44,7 @@ async function Home() {
               />
             </div>
           ))}
-      </div> */}
+      </div>
     </main>
   );
 }
